@@ -636,6 +636,10 @@ a {
 }
 
 /* What we do */
+.section--no-top-padding {
+  padding-top: 0;
+}
+
 .specializations {
   display: flex;
   justify-content: space-between;
@@ -824,7 +828,7 @@ a {
   transform: translatex(0);
 }
 
-.project-card__inner {
+.project-card {
   position: relative;
   overflow: hidden;
 }
@@ -1003,6 +1007,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.subscription-form__button:hover,
+.subscription-form__button:focus .subscription-form__icon {
+  background-color: var(--button-color);
+  color: var(--site-accent-color);
 }
 
 .subscription-form__icon {

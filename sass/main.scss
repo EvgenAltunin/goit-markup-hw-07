@@ -759,6 +759,10 @@ a {
 
 /* What we do */
 
+.section--no-top-padding {
+    padding-top: 0;
+}
+
 .specializations {
     display: flex;
     justify-content: space-between;
@@ -770,7 +774,6 @@ a {
     margin: 15px;
     min-width: 370px;
 }
-
 
 .specialization__item {
     position: relative;
@@ -1190,6 +1193,13 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.subscription-form__button:hover,
+.subscription-form__button:focus
+.subscription-form__icon {
+    background-color: var(--button-color);
+    color: var(--site-accent-color);
 }
 
 .subscription-form__icon {
